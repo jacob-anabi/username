@@ -1,5 +1,7 @@
 #! /bin/bash
 # username.sh
+# Jacob Anabi
+echo "Username rules: contains lower case letters, digits, and underscores allowed; must start with a lower case letter; length: 3-12"
 echo "Enter a username: "
 read USRNM
 while echo $USRNM | egrep -v "^[a-z][a-z0-9_]{2,11}$" > /dev/null 2>&1
